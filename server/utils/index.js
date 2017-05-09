@@ -5,7 +5,7 @@
 const Logger = require('mini-logger'),
   validator = require('validator'),
   config = require('../configs/index.js'),
-  print = require('debug')('kov-blog'),
+  print = require('debug')('panda'),
   utils = {};
 module.exports = utils;
 /**

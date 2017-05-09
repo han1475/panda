@@ -12,21 +12,21 @@ const path = require('path'),
 //默认生产环境
 let config = {
   app: {
-    name:'kov-blog',
+    name:'panda',
     port: 3000,
     adminPath: '/api' // 后台路径
   },
   debug:false,
   env:'production',
   mongoConfig: { // 数据库配置
-    url: 'mongodb://localhost:27017/kov-blog',
+    url: 'mongodb://localhost:27017/panda',
     opts:{
       user:'',
       pass:''
     }
   },
   'jwt': {
-    'cert': 'kov-blog'
+    'cert': 'panda'
   },
   dir: { // 目录配置
     root,
