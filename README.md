@@ -109,6 +109,6 @@ npm run build-admin
 Thanks for all.
 
 # Todo
-- [] 切换技术栈到Vue.js@2.x和Koa.js@2.x
-- [] 实现自动更新搜索索引
+- [ ] 切换技术栈到Vue.js@2.x和Koa.js@2.x
+- [ ] 实现自动更新搜索索引
 
