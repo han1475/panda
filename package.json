@@ -1,8 +1,8 @@
 {
-  "name": "kov-blog",
-  "version": "1.1.0",
-  "description": "a blog with vue.js koa mongo",
-  "author": "liucan",
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "a blog with Vue.js koa MongoDB",
+  "author": "han",
   "private": true,
   "scripts": {
     "dev-client": "node client/build/dev-server.js",
