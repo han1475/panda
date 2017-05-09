@@ -3,7 +3,7 @@
     <nav-aside>
     </nav-aside>
     <div class="ovh">
-      <h3 class="page-title">关于我们<button type="button" class="btn btn-save r" style="margin-right: 50px;margin-top:-6px" @click="save">保存</button></h3>
+      <h3 class="page-title">关于我<button type="button" class="btn btn-save r" style="margin-right: 50px;margin-top:-6px" @click="save">保存</button></h3>
       <editor :content.sync="content"></editor>
 
     </div>
