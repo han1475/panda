@@ -22,10 +22,6 @@ const commentSchema =  new Schema( {
       type: String,
       default: ''
     },
-    duoshuoKey: {
-      type: String,
-      default: ''
-    },
     likes:{
       type: Number,
       default: 0

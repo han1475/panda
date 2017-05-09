@@ -18,9 +18,9 @@
     <div class="nav-mask" :class="[asideNavShow? 'open':'']" @click="asideNavShow = false">
       <aside class="nav-aside" >
         <ul class="nav-aside-list">
+          <li ><search></search></li>
           <li ><a class="nav-link" v-link="{ path: '/posts', activeClass: 'active' }" >文章</a></li>
           <li ><a class="nav-link" v-link="{ path: '/tags', activeClass: 'active' }">标签</a></li>
-          <li v-if="gitRepoUrl !== null"><a class="nav-link" target="_blank" :href="gitRepoUrl">leetcode</a></li>
           <li ><a class="nav-link" v-link="{ path: '/me', activeClass: 'active' }">关于我</a></li>
         </ul>
       </aside>
@@ -151,7 +151,6 @@
     },
     data () {
       return {
-        gitRepoUrl: process.env.leetcode,
         asideNavShow: false
       }
     }
