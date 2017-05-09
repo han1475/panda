@@ -113,11 +113,9 @@
       buildCatalog () {
         this.$nextTick(() => {
           let doms = document.querySelectorAll(`#${this.domId} h1,#${this.domId} h2,#${this.domId} h3`)
-          console.log(doms);
           let result = []
           addHeaderToArr(result, doms, 0, 1)
           this.nodeArr = result
-          console.log(result);
         })
       },
       toTop () {
