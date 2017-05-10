@@ -28,6 +28,7 @@
 </script>
 <style lang="css">
   .search-query {
+    width: 200px;
     height: 30px;
     line-height: 30px;
     box-sizing: border-box;
