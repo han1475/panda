@@ -10,7 +10,7 @@
     "dev-admin": "node admin/build/dev-server.js",
     "build-admin": "node admin/build/build.js",
     "test": "",
-    "dev-server": "NODE_ENV=development DEBUG=panda supervisor --harmony server/index.js"
+    "dev-server": "cross-env NODE_ENV=development DEBUG=panda supervisor --harmony server/index.js"
   },
   "dependencies": {
     "assert": "^1.4.1",
