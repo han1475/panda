@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <header-nav></header-nav>
-    <main class="content">
+  <div id="app" @click="hideNav()">
+    <header-nav ></header-nav>
+    <main class="content" >
       <router-view
         transition="fade"
         transition-mode="out-in"
@@ -9,7 +9,7 @@
         >
       </router-view>
     </main>
-    <footer class="copyright">
+    <footer class="copyright" >
       Copyrights 韩晓君
     </footer>
   </div>
@@ -28,6 +28,11 @@
         enter () {
           this.$broadcast('enter')
         }
+      }
+    },
+    methods:{
+      hideNav(){
+          this.$broadcast('hideNav')
       }
     }
   }

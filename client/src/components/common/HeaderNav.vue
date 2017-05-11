@@ -14,7 +14,7 @@
           <li class="nav-link-item"><a class="nav-link" v-link="{ path: '/tags', activeClass: 'active' }">标签</a></li>
           <li class="nav-link-item"><a class="nav-link" v-link="{ path: '/me', activeClass: 'active' }">关于我</a></li>
         </ul>
-        <img src="../../assets/img/menu.png" alt="" class="menu-button" @click="changeShow()">
+        <img src="../../assets/img/menu.png" alt="" class="menu-button" @click.stop="changeShow()">
       </nav>
     </header>
     <div class="nav-mask" :class="[asideNavShow? 'open':'']">
@@ -183,10 +183,15 @@
       }
 
     },
-    methods: {
-      changeShow(){
-        this.asideNavShow = !this.asideNavShow;
-        效果
+    methods:{
+        changeShow()
+        {
+          this.asideNavShow=!this.asideNavShow
+        }
+    },
+    events:{
+      'hideNav':function(){
+        this.asideNavShow=false
       }
     }
   }
