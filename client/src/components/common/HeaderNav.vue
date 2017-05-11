@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="top-nav-container">
-      <nav class="top-nav">
+      <nav class="top-nav" @click="stopPro()">
         <a v-link="{ path: '/posts', activeClass: 'active' }" class="vertical-center nav-logo">
           <img src="../../assets/img/logo.png" class="logo vertical-center-content" alt="">
           <span class="brand vertical-center-content">韩晓君的博客</span>
@@ -14,11 +14,11 @@
           <li class="nav-link-item"><a class="nav-link" v-link="{ path: '/tags', activeClass: 'active' }">标签</a></li>
           <li class="nav-link-item"><a class="nav-link" v-link="{ path: '/me', activeClass: 'active' }">关于我</a></li>
         </ul>
-        <img src="../../assets/img/menu.png" alt="" class="menu-button" @click.stop="changeShow()">
+        <img src="../../assets/img/menu.png" alt="" class="menu-button" @click="changeShow()">
       </nav>
     </header>
     <div class="nav-mask" :class="[asideNavShow? 'open':'']">
-      <aside class="nav-aside">
+      <aside class="nav-aside" @click="stopPro()">
         <ul class="nav-aside-list">
           <li class="search" v-if="!pc">
             <search></search>
@@ -187,6 +187,9 @@
         changeShow()
         {
           this.asideNavShow=!this.asideNavShow
+        },
+        stopPro(){
+            event.stopPropagation();
         }
     },
     events:{
